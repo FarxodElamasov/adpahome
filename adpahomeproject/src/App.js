@@ -6,6 +6,7 @@ export default function App() {
       <div>Admin Home</div>
       <div>Boshladik 11.11.2022</div>
       <div>Bosila gazini</div>
+      <div>Bosila gazini2</div>
     </>
   )
 }
