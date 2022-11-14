@@ -5,8 +5,6 @@ import ProductList from "../Product/Product";
 import Users from "../Users/Users";
 import Icons from "../icons/routerIcons"
 
-
-
 const MenuRouter = [
     {
         title: "Home",
@@ -34,7 +32,5 @@ const MenuRouter = [
         icon: Icons(el.path)
     }
 })
-
-
 
 export default MenuRouter

@@ -25,15 +25,12 @@ export default function DrawerMenu() {
 
     return (
         <Box sx={{ display: 'flex' }}>
-            <Typography className='positionTetx'>
-                <SelectOption />
-            </Typography>
             <CssBaseline />
             <AppBar
                 position="fixed"
-                sx={{ boxShadow: "none"}}
+                sx={{ boxShadow: "none" }}
             >
-              {/* <Toolbar sx={{background: "#363740"}}></Toolbar> */}
+                <Toolbar sx={{ background: "#363740" }}></Toolbar>
             </AppBar>
             <Drawer
                 sx={{
@@ -45,15 +42,17 @@ export default function DrawerMenu() {
                         background: "#363740",
                     },
                     
-                  }}
+                }}
                 variant="permanent"
                 anchor="left"
-                >
-                    {/* <Select/> */}
+            >
                 <Typography variant="h6" sx={{ paddingLeft: "20px", paddingTop: "20px", paddingBottom: "0", color: "#E5E5E5" }}>
                     <DonutLargeIcon />Muhammadaziz
                 </Typography>
                 <Toolbar />
+                <Typography className='positionTetx'>
+                    <SelectOption/>
+                </Typography>
                 <Divider />
                 <List>
                     {MenuRouter.map((text) => (
@@ -62,18 +61,15 @@ export default function DrawerMenu() {
                             key={text.path}
                             component={RouterLink}
                             to={text.path}>
-
                             <ListItemButton sx={{ color: "#E5E5E5" }}>
                                 <ListItemIcon>{text?.icon}</ListItemIcon>
                                 <ListItemText >{text?.title}</ListItemText>
                             </ListItemButton>
-
                         </ListItem>
                     ))}
                 </List>
                 <Divider />
             </Drawer>
-
             <Box
                 component="main"
                 sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
