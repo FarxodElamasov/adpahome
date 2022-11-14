@@ -1,178 +1,84 @@
-import * as React from "react";
-import PropTypes from "prop-types";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
-import Divider from "@mui/material/Divider";
-import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import MenuIcon from "@mui/icons-material/Menu";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import HomeIcon from "@mui/icons-material/Home";
-import AddIcon from "@mui/icons-material/Add";
-import ListAltIcon from "@mui/icons-material/ListAlt";
-import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
+import * as React from 'react';
+import { Link as RouterLink } from "react-router-dom"
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
+import CssBaseline from '@mui/material/CssBaseline';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import List from '@mui/material/List';
+import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+// import "../../App.css"
+import DonutLargeIcon from '@mui/icons-material/DonutLarge';
+import MenuRouter from "../MenuRouter/MenuRouter"
+import "./drawer.css"
+import SelectOption from './Select/Select';
+
+
 
 const drawerWidth = 240;
+export default function DrawerMenu() {
 
-function ResponsiveDrawer(props) {
-  const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+    return (
+        <Box sx={{ display: 'flex' }}>
+            <Typography className='positionTetx'>
+                <SelectOption />
+            </Typography>
+            <CssBaseline />
+            <AppBar
+                position="fixed"
+                sx={{ boxShadow: "none"}}
+            >
+              {/* <Toolbar sx={{background: "#363740"}}></Toolbar> */}
+            </AppBar>
+            <Drawer
+                sx={{
+                    width: drawerWidth,
+                    flexShrink: 0,
+                    '& .MuiDrawer-paper': {
+                        width: drawerWidth,
+                        boxSizing: 'border-box',
+                        background: "#363740",
+                    },
+                    
+                  }}
+                variant="permanent"
+                anchor="left"
+                >
+                    {/* <Select/> */}
+                <Typography variant="h6" sx={{ paddingLeft: "20px", paddingTop: "20px", paddingBottom: "0", color: "#E5E5E5" }}>
+                    <DonutLargeIcon />Muhammadaziz
+                </Typography>
+                <Toolbar />
+                <Divider />
+                <List>
+                    {MenuRouter.map((text) => (
+                        <ListItem
+                            disablePadding
+                            key={text.path}
+                            component={RouterLink}
+                            to={text.path}>
 
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
+                            <ListItemButton sx={{ color: "#E5E5E5" }}>
+                                <ListItemIcon>{text?.icon}</ListItemIcon>
+                                <ListItemText >{text?.title}</ListItemText>
+                            </ListItemButton>
 
-  const drawer = (
-    <div>
-      <Toolbar />
-      <Divider />
-      <List>
-        {["Home"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <HomeIcon sx={{ color: "white" }} />
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <List>
-        {["Product create"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <AddIcon sx={{ color: "white" }} />
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <List>
-        {["Product list"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <ListAltIcon sx={{ color: "white" }} />
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <List>
-        {["User info"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <AssignmentIndIcon sx={{color: "white"}} />
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-    </div>
-  );
+                        </ListItem>
+                    ))}
+                </List>
+                <Divider />
+            </Drawer>
 
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
-
-  return (
-    <Box sx={{ display: "flex"  }}>
-      <CssBaseline />
-      <AppBar
-        position="fixed"
-        sx={{
-          width: { sm: `calc(100% - ${drawerWidth}px)` },
-          ml: { sm: `${drawerWidth}px` },
-          background: "#363740"
-        }}
-      >
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}>
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div">
-            Dashboard
-          </Typography>
-        </Toolbar>
-      </AppBar>
-      <Box
-        component="nav"
-        sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
-        aria-label="mailbox folders">
-        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: drawerWidth,
-            },
-          }}>
-          {drawer}
-        </Drawer>
-        <Drawer
-          variant="permanent"
-          sx={{
-            display: { xs: "none", sm: "block" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: drawerWidth,
-              background: "#363740",
-              color: "white",
-              fontFamily: "Mulish",
-            },
-          }}
-          open>
-          {drawer}
-        </Drawer>
-      </Box>
-      <Box
-        component="main"
-        sx={{
-          flexGrow: 1,
-          p: 3,
-          width: { sm: `calc(100% - ${drawerWidth}px)` },
-        }}>
-        <Toolbar />
-      </Box>
-    </Box>
-  );
+            <Box
+                component="main"
+                sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
+            >
+            </Box>
+        </Box>
+    );
 }
-
-ResponsiveDrawer.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window: PropTypes.func,
-};
-
-export default ResponsiveDrawer;
