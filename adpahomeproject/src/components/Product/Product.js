@@ -1,7 +1,13 @@
 import React from 'react'
+import { Grid } from '@mui/material'
 
-export default function Product_list() {
+
+export default function ProductList() {
   return (
-    <div>Product_list</div>
+    <Grid container direction="row" justifyContent="center">
+    <Grid xs={5}>
+      <h1>Hello List</h1>
+    </Grid>
+  </Grid>
   )
 }

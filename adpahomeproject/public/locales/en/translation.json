@@ -1,0 +1,10 @@
+{
+    "admin": {
+        "drawer": {
+            "home": "Hello Home",
+            "product_create": "Hello Product",
+            "product_list": "Hello List",
+            "user_info": "Hello User"
+        }
+    }
+}

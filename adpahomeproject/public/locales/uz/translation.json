@@ -1,0 +1,10 @@
+{
+    "admin": {
+        "drawer": {
+            "home": "Salom Uy",
+            "product_create": "Salom Mahsulotlar",
+            "product_list": "Salom Ro'yxatlar",
+            "user_info": "Salom Foydalanuvchilar"
+        }
+    }
+}
