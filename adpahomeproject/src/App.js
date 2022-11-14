@@ -6,11 +6,9 @@ import Create from "../src/components/Create/Create"
 import Product from "../src/components/Product/Product"
 import Users from "../src/components/Users/Users"
 
-
 export default function App() {
   return (
     <>
-
       <Router>
         <Drawer />
         <Routes>
