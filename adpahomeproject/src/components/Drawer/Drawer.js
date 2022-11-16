@@ -12,7 +12,6 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-// import "../../App.css"
 import DonutLargeIcon from '@mui/icons-material/DonutLarge';
 import MenuRouter from "../MenuRouter/MenuRouter"
 import "./drawer.css"
@@ -41,17 +40,17 @@ export default function DrawerMenu() {
                         boxSizing: 'border-box',
                         background: "#363740",
                     },
-                    
+
                 }}
                 variant="permanent"
                 anchor="left"
             >
                 <Typography variant="h6" sx={{ paddingLeft: "20px", paddingTop: "20px", paddingBottom: "0", color: "#E5E5E5" }}>
-                    <DonutLargeIcon />Muhammadaziz
+                    <DonutLargeIcon sx={{ paddingTop: "2px" }} /> Buy Home
                 </Typography>
                 <Toolbar />
                 <Typography className='positionTetx'>
-                    <SelectOption/>
+                    <SelectOption />
                 </Typography>
                 <Divider />
                 <List>
