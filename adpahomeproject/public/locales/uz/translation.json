@@ -5,6 +5,15 @@
             "product_create": "Salom Mahsulotlar",
             "product_list": "Salom Ro'yxatlar",
             "user_info": "Salom Foydalanuvchilar"
+        },
+        "menu": {
+            "home_menu": "Uy",
+            "product_menu": "Mahsulot qo'shish",
+            "product_list_menu": "Mahsulotlar ro'yxati",
+            "user_menu": "Foydalanuvchilar"
+        },
+        "product_create_form": {
+            "product_heading": "Mahsulot yaratish sahifasi"
         }
     }
 }

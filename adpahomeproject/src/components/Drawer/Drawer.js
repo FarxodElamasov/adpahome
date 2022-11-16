@@ -17,11 +17,14 @@ import DonutLargeIcon from '@mui/icons-material/DonutLarge';
 import MenuRouter from "../MenuRouter/MenuRouter"
 import "./drawer.css"
 import SelectOption from './Select/Select';
+import { useTranslation } from 'react-i18next';
 
 
 
 const drawerWidth = 240;
 export default function DrawerMenu() {
+
+    const { t } = useTranslation()
 
     return (
         <Box sx={{ display: 'flex' }}>
@@ -62,8 +65,8 @@ export default function DrawerMenu() {
                             component={RouterLink}
                             to={text.path}>
                             <ListItemButton sx={{ color: "#E5E5E5" }}>
-                                <ListItemIcon>{text?.icon}</ListItemIcon>
-                                <ListItemText >{text?.title}</ListItemText>
+                                <ListItemIcon>{text?.icon}</ListItemIcon>   
+                                {text?.title === "Home" ? <ListItemText>{t("admin.menu.home_menu")}</ListItemText>: null || text?.title === "Product create" ? <ListItemText>{t("admin.menu.product_menu")}</ListItemText>: null ||  text?.title === "Product list" ? <ListItemText>{t("admin.menu.product_list_menu")}</ListItemText>: null|| text?.title === "User info" ? <ListItemText>{t("admin.menu.user_menu")}</ListItemText>: null}
                             </ListItemButton>
                         </ListItem>
                     ))}

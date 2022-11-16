@@ -28,6 +28,7 @@ export default function SelectOption() {
                     value={age}
                     label="Age"
                     onChange={handleChange}
+                    defaultOpen={age}
                 >
                     <MenuItem value={"en"}>English</MenuItem>
                     <MenuItem value={"ru"}>Russian</MenuItem>
