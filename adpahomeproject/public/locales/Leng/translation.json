@@ -1,19 +1,30 @@
 {
     "admin": {
         "drawer": {
-            "home": "Hello Home",
+            "home": "Site users statistics",
             "product_create": "Hello Product",
             "product_list": "Hello List",
             "user_info": "Hello User"
         },
         "menu": {
-            "home_menu": "Home",
-            "product_menu": "Product create",
-            "product_list_menu": "Product List",
-            "user_menu": "User info"
+            "home_menu": "Statistics",
+            "product_menu": "Product add",
+            "product_list_menu": "Product list",
+            "user_menu": "Users info"
         },
         "product_create_form": {
-            "product_heading": "Product Create Page"
+            "product_heading": "Product add page"
+        },
+        "form_labels": {
+            "name": "Name",
+            "description": "Description",
+            "price": "Price",
+            "mainImage": "Main image",
+            "frontImage": "Image from the front",
+            "rightImage": "Image on the right",
+            "leftImage": "Image from the left",
+            "behindImage": "Picture from the back",
+            "insideImage": "Picture from the inside"
         }
     }
 }

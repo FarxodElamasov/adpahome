@@ -1,19 +1,30 @@
 {
     "admin": {
         "drawer": {
-            "home": "Salom Uy",
+            "home": "Sayt obunachilari statistikasi",
             "product_create": "Salom Mahsulotlar",
             "product_list": "Salom Ro'yxatlar",
             "user_info": "Salom Foydalanuvchilar"
         },
         "menu": {
-            "home_menu": "Uy",
+            "home_menu": "Statistika",
             "product_menu": "Mahsulot qo'shish",
             "product_list_menu": "Mahsulotlar ro'yxati",
             "user_menu": "Foydalanuvchilar"
         },
         "product_create_form": {
-            "product_heading": "Mahsulot yaratish sahifasi"
+            "product_heading": "Mahsulot qo'shish sahifasi"
+        },
+        "form_labels": {
+            "name": "Ism",
+            "description": "Tavsif",
+            "price": "Narxi",
+            "mainImage": "Asosiy rasm",
+            "frontImage": "Old tomondan rasm",
+            "rightImage": "O'ng tomondan rasm",
+            "leftImage": "Chap tomondan rasm",
+            "behindImage": "Orqa tomondan rasm",
+            "insideImage": "Ichki tomondan rasm"
         }
     }
 }

@@ -3,13 +3,13 @@
     {
       "name": "House",
       "description": "New home",
+      "price": "2000",
       "mainImage": "https://media.istockphoto.com/id/1147674297/photo/single-family-new-construction-home-in-suburb-neighborhood-in-the-south.jpg?b=1&s=170667a&w=0&k=20&c=JgvKH7hV2N0SHB_JIBT88drjkQvz3WjyX48Nz7YKe_E=",
       "frontImage": "",
       "rightImage": "",
       "leftImage": "",
       "behindImage": "",
       "innerImage": "",
-      "price": "2000",
       "id": 1
     }
   ]

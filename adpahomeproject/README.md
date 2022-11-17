@@ -1,5 +1,5 @@
 Proekt Boshlandi 11.11.2022 . . .
-javohir group home chart.js 
+
   const navigate = useNavigate();
   const [mainImage, setMainImage] = useState("");
   const [description, setDescription] = useState("");
