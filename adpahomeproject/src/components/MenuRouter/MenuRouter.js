@@ -7,7 +7,7 @@ import Icons from "../icons/routerIcons"
 
 const MenuRouter = [
     {
-        title: "Home",
+        title: "Statistics",
         path: "/",
         element: <Home />
     },

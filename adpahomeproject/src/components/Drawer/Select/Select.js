@@ -30,9 +30,9 @@ export default function SelectOption() {
                     onChange={handleChange}
                     defaultOpen={age}
                 >
-                    <MenuItem value={"en"}>English</MenuItem>
-                    <MenuItem value={"ru"}>Russian</MenuItem>
-                    <MenuItem value={"uz"}>Uzbek</MenuItem>
+                    <MenuItem value={"Leng"}>English</MenuItem>
+                    <MenuItem value={"Язик"}>Russian</MenuItem>
+                    <MenuItem value={"Til"}>Uzbek</MenuItem>
                 </Select>
             </FormControl>
         </>

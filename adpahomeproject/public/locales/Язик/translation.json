@@ -1,0 +1,30 @@
+{
+    "admin": {
+        "drawer": {
+            "home": "Статистика подписчиков сайта ",
+            "product_create": "Привет продукты",
+            "product_list": "Привет лист",
+            "user_info": "Привет пользователь"
+        },
+        "menu": {
+            "home_menu": "Статистика",
+            "product_menu": "Добавить продукти",
+            "product_list_menu": "Список продуктов",
+            "user_menu": "Пользователи"
+        },
+        "product_create_form": {
+            "product_heading": "Страница добавить продукта"
+        },
+        "form_labels": {
+            "name": "Имя",
+            "description": "Oписание",
+            "price": "Цена",
+            "mainImage": "Основное изображение",
+            "frontImage": "Изображение спереди",
+            "rightImage": "Изображение справа",
+            "leftImage": "Изображение слева",
+            "behindImage": "Фото со спины",
+            "insideImage": "Изображение изнутри"
+        }
+    }
+}

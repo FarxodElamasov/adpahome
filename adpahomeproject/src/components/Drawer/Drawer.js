@@ -12,8 +12,8 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-// import "../../App.css"
-import DonutLargeIcon from '@mui/icons-material/DonutLarge';
+// import DonutLargeIcon from '@mui/icons-material/DonutLarge';
+import ApartmentOutlinedIcon from '@mui/icons-material/ApartmentOutlined';
 import MenuRouter from "../MenuRouter/MenuRouter"
 import "./drawer.css"
 import SelectOption from './Select/Select';
@@ -44,17 +44,17 @@ export default function DrawerMenu() {
                         boxSizing: 'border-box',
                         background: "#363740",
                     },
-                    
+
                 }}
                 variant="permanent"
                 anchor="left"
             >
                 <Typography variant="h6" sx={{ paddingLeft: "20px", paddingTop: "20px", paddingBottom: "0", color: "#E5E5E5" }}>
-                    <DonutLargeIcon />Muhammadaziz
+                    <ApartmentOutlinedIcon sx={{ width: "35px" }} /> Buy Home
                 </Typography>
                 <Toolbar />
                 <Typography className='positionTetx'>
-                    <SelectOption/>
+                    <SelectOption />
                 </Typography>
                 <Divider />
                 <List>
@@ -65,8 +65,8 @@ export default function DrawerMenu() {
                             component={RouterLink}
                             to={text.path}>
                             <ListItemButton sx={{ color: "#E5E5E5" }}>
-                                <ListItemIcon>{text?.icon}</ListItemIcon>   
-                                {text?.title === "Home" ? <ListItemText>{t("admin.menu.home_menu")}</ListItemText>: null || text?.title === "Product create" ? <ListItemText>{t("admin.menu.product_menu")}</ListItemText>: null ||  text?.title === "Product list" ? <ListItemText>{t("admin.menu.product_list_menu")}</ListItemText>: null|| text?.title === "User info" ? <ListItemText>{t("admin.menu.user_menu")}</ListItemText>: null}
+                                <ListItemIcon>{text?.icon}</ListItemIcon>
+                                {text?.title === "Statistics" ? <ListItemText>{t("admin.menu.home_menu")}</ListItemText> : null || text?.title === "Product create" ? <ListItemText>{t("admin.menu.product_menu")}</ListItemText> : null || text?.title === "Product list" ? <ListItemText>{t("admin.menu.product_list_menu")}</ListItemText> : null || text?.title === "User info" ? <ListItemText>{t("admin.menu.user_menu")}</ListItemText> : null}
                             </ListItemButton>
                         </ListItem>
                     ))}
