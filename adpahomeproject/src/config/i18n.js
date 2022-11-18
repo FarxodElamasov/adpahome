@@ -11,11 +11,11 @@ i18n
     backend: {
       loadPath: `/locales/{{lng}}/translation.json`,
     },
-    fallbackLng: "uz",
+    fallbackLng: "Til",
     interpolation: {
       escapeValue: false,
     },
-    supportedLngs: ["uz", "ru", "en"],
+    supportedLngs: ["Til", "Язик", "Leng"],
   });
 
 export default i18n;
