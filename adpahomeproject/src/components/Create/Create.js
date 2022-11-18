@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import axios from "axios";
 
 export default function CustomizedInputs() {
+
   const { t } = useTranslation();
  
   const handleSubmit = () => {
