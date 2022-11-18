@@ -1,16 +1,16 @@
 {
   "data": [
     {
-      "name": "House",
+      "name": "Uy",
       "description": "New home",
       "price": "2000",
       "mainImage": "https://media.istockphoto.com/id/1147674297/photo/single-family-new-construction-home-in-suburb-neighborhood-in-the-south.jpg?b=1&s=170667a&w=0&k=20&c=JgvKH7hV2N0SHB_JIBT88drjkQvz3WjyX48Nz7YKe_E=",
-      "frontImage": "",
-      "rightImage": "",
-      "leftImage": "",
-      "behindImage": "",
-      "innerImage": "",
-      "id": 1
+      "frontImage": "https://media.istockphoto.com/id/1147674297/photo/single-family-new-construction-home-in-suburb-neighborhood-in-the-south.jpg?b=1&s=170667a&w=0&k=20&c=JgvKH7hV2N0SHB_JIBT88drjkQvz3WjyX48Nz7YKe_E=",
+      "rightImage": "https://media.istockphoto.com/id/1147674297/photo/single-family-new-construction-home-in-suburb-neighborhood-in-the-south.jpg?b=1&s=170667a&w=0&k=20&c=JgvKH7hV2N0SHB_JIBT88drjkQvz3WjyX48Nz7YKe_E=",
+      "leftImage": "https://media.istockphoto.com/id/1147674297/photo/single-family-new-construction-home-in-suburb-neighborhood-in-the-south.jpg?b=1&s=170667a&w=0&k=20&c=JgvKH7hV2N0SHB_JIBT88drjkQvz3WjyX48Nz7YKe_E=",
+      "behindImage": "https://media.istockphoto.com/id/1147674297/photo/single-family-new-construction-home-in-suburb-neighborhood-in-the-south.jpg?b=1&s=170667a&w=0&k=20&c=JgvKH7hV2N0SHB_JIBT88drjkQvz3WjyX48Nz7YKe_E=",
+      "innerImage": "https://media.istockphoto.com/id/1147674297/photo/single-family-new-construction-home-in-suburb-neighborhood-in-the-south.jpg?b=1&s=170667a&w=0&k=20&c=JgvKH7hV2N0SHB_JIBT88drjkQvz3WjyX48Nz7YKe_E=",
+      "id": 2
     }
   ]
 }
