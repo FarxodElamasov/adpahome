@@ -12,7 +12,7 @@ export default function EditPage() {
     const { id } = useParams();
     const navigate = useNavigate();
 
-    console.log(id);
+    console.log(id)
 
     const getAllDataId = async (id) => {
         await axios.get(`http://localhost:3000/data/${id}`)
