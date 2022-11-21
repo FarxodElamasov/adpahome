@@ -17,7 +17,7 @@ export default function App() {
           <Route path="/productcreate" element={<Create />} />
           <Route path="/list" element={<Product />} />
           <Route path="/users" element={<Users />} />
-          <Route path="/editpage" element={<EditPage />} />
+          <Route path="/list/editpage/:id" element={<EditPage />} />
         </Routes>
       </Router>
     </>
