@@ -12,7 +12,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import Paper from '@mui/material/Paper';
 import axios from 'axios';
 
-export default function About() {
+export default function Product() {
 
   const [data, setData] = useState([]);
 
@@ -38,7 +38,7 @@ export default function About() {
   return (
     <>
       <Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
-        <Grid item xs={8} >
+        <Grid item xs={7} >
           <Paper elevation={24} sx={{ marginTop: 10  }}>
             <TableContainer >
               <Table sx={{ minWidth: 650, border: "20px", }} aria-label="simple table">
