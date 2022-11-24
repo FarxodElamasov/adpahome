@@ -12,7 +12,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import Paper from '@mui/material/Paper';
 import axios from 'axios';
 
-export default function About() {
+export default function Product() {
 
   const [data, setData] = useState([]);
 

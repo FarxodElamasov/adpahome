@@ -47,6 +47,18 @@
       "behindImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKJ1fse2B__CSN8XYlrUxzfJdknXBp8z4KBSbEMDx9YqJNOHzkkIpi1Gl9BLrSD4AzLxE&usqp=CAU",
       "innerImage": "https://wallpapercrafter.com/sizes/2560x1440/27820-yacht-interior-design-style-4k.jpg",
       "id": 6
+    },
+    {
+      "name": "Developer house",
+      "description": "Comfortable house",
+      "price": "7000",
+      "img": "https://garant-bud.com/design/dom/images/slider/header_bg_1_1.jpg",
+      "frontImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKJ1fse2B__CSN8XYlrUxzfJdknXBp8z4KBSbEMDx9YqJNOHzkkIpi1Gl9BLrSD4AzLxE&usqp=CAU",
+      "rightImage": "https://i.pinimg.com/736x/8d/5d/e6/8d5de6df9018f01eb7062c964cc17e01.jpg",
+      "leftImage": "https://cdna.artstation.com/p/assets/images/images/021/735/466/large/vitaly-tsarykevich-hitech-2-2300p.jpg?1572775911",
+      "behindImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKJ1fse2B__CSN8XYlrUxzfJdknXBp8z4KBSbEMDx9YqJNOHzkkIpi1Gl9BLrSD4AzLxE&usqp=CAU",
+      "innerImage": "https://wallpapercrafter.com/sizes/2560x1440/27820-yacht-interior-design-style-4k.jpg",
+      "id": 7
     }
   ]
 }
